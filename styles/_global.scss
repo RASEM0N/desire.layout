@@ -1,0 +1,41 @@
+@import 'vars';
+@import 'mixins';
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: $fw-normal;
+    font-size: $fs-base;
+    font-family: $ff-open-sans;
+    line-height: 18px;
+
+    position: relative;
+}
+
+h1 {
+    @include h1Font;
+}
+
+h2 {
+    @include h2Font;
+}
+
+h3 {
+    @include h3Font;
+}
+
+h4 {
+    @include h4Font;
+}
+
+h5 {
+    @include h5Font;
+}
+
+p {
+    @include textFont;
+}

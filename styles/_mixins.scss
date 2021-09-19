@@ -1,0 +1,37 @@
+@import "vars";
+
+@mixin setupFont($a-size, $a-weight, $a-lh, $a-family, $a-color) {
+  font-family: $a-family;
+  font-size: $a-size;
+  font-weight: $a-weight;
+  line-height: $a-lh;
+  color: $a-color;
+}
+
+@mixin setupHeaderFont($a-size, $a-lh) {
+  @include setupFont($a-size, $fw-bold, $a-lh, $ff-montserrat, $color-header);
+}
+
+@mixin h1Font {
+  @include setupHeaderFont($h1-size, 134px);
+}
+
+@mixin h2Font {
+  @include setupHeaderFont($h2-size, 80px);
+}
+
+@mixin h3Font {
+  @include setupHeaderFont($h3-size, 54px);
+}
+
+@mixin h4Font {
+  @include setupHeaderFont($h4-size, 38px);
+}
+
+@mixin h5Font {
+  @include setupHeaderFont($h5-size, 23px);
+}
+
+@mixin textFont {
+  @include setupFont($fs-base, $fw-normal, 27px, $ff-open-sans, $color-text);
+}

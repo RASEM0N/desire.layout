@@ -1,0 +1,57 @@
+//#region @COLORS
+/**======== Common colors =======**/
+$color-gray: #5a5a5a;
+$color-gray-1: #363838;
+$color-gray-2: #707070;
+$color-gray-3: #8f8d8d;
+$color-gray-4: #a1a1a1;
+$color-gray-5: rgba(54, 56, 56, 0.9033);
+
+$color-yellow: #ffef35;
+$color-yellow-1: #f1d152;
+
+$color-white: #fffff0;
+$color-dark: #363838;
+
+/**======= Special colors =======**/
+$color-header-text: $color-gray-5;
+$color-placeholder: $color-gray-4;
+$color-address: $color-gray-4;
+$color-disable: $color-gray-3;
+$color-footer-link: $color-gray-2;
+$color-info-extra: $color-gray-2;
+$color-header: $color-gray-1;
+$color-text: $color-gray;
+
+//#endregion
+
+//#region @TYPOGRAPHY
+/**======= Font families ======**/
+$ff-open-sans: 'Open Sans', sans-serif;
+$ff-montserrat: 'Montserrat', sans-serif;
+
+/**======== Font sizes ========**/
+$fs-sm: 14px; // 0.875rem
+$fs-base: 16px; // 1rem
+$fs-xl: 24px; // 1.5rem
+
+/**======= Font weights =======**/
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+/**==== Heading font sizes ====**/
+$h1-size: 110px;
+$h2-size: 60px;
+$h3-size: 36px;
+$h4-size: 26px;
+$h5-size: 16px;
+
+/**======= Breakpoints =======**/
+$size-sm: 512px; // 32rem
+$size-md: 768px; // 48rem
+$size-lg: 1024px; // 64rem
+$size-xl: 1280px; // 80rem
+$size-xl-e: 1536px; // 96rem
+//#endregion
