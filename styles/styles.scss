@@ -7,6 +7,162 @@
 // ----------------------------------------
 // ----------------------------------------
 
+.header {
+    padding: 45px 0;
+
+    &__inner {
+        padding: 0 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        padding-left: calc(60px + 40px);
+        margin: 0 auto;
+    }
+
+    &__btn {
+        margin-left: 60px;
+    }
+
+    &__btn-img {
+    }
+}
+
+.slider {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list {
+        background-image: url('images/main__slider-bg.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding: 174px 36px 146px;
+        margin-bottom: 85px;
+    }
+
+    &__list-item {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__info {
+        margin-left: auto;
+        width: 54%;
+    }
+
+    &__info-title {
+        margin-bottom: 26px;
+    }
+
+    &__info-line {
+        width: 40%;
+        background: #979797;
+        height: 3px;
+    }
+
+    &__info-text {
+        margin-top: 26px;
+    }
+
+    &__group {
+        align-self: center;
+    }
+
+    &__group-btn {
+        width: 10px;
+        height: 10px;
+        background: $color-dark;
+        border-radius: 50%;
+
+        & + & {
+            margin-left: 30px;
+        }
+    }
+
+    &__group-btn_active {
+        background-color: $color-yellow;
+    }
+}
+
+.footer {
+    &__content {
+        padding: 61px 0 80px;
+        background-color: $color-gray-6;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 50%;
+        margin-right: 28px;
+    }
+
+    &__info-title {
+        margin-bottom: 14px;
+    }
+
+    &__info-text {
+        margin-bottom: 16px;
+    }
+
+    &__info-email {
+        display: block;
+        margin-bottom: 22px;
+
+        font-size: $fs-sm;
+        font-weight: $fw-bold;
+        color: $color-dark;
+
+        &::before {
+            content: url('images/icon-email.svg');
+            margin-right: 14px;
+        }
+    }
+
+    &__form-btn {
+        margin-left: 10px;
+    }
+
+    &__menu {
+    }
+
+    &__menu-item {
+        position: relative;
+
+        & + & {
+            margin-top: 15px;
+        }
+    }
+
+    &__menu-img {
+        position: absolute;
+        top: 7px;
+        left: -28px;
+    }
+
+    &__menu-link {
+        font-weight: $fw-bold;
+        font-size: $fs-sm;
+        color: $color-gray-2;
+    }
+
+    &__copyright {
+        padding: 42px 0;
+        background-color: $color-dark;
+        color: $color-copyright;
+        text-align: center;
+    }
+}
+
 // ----------------------------------------
 // ----------------------------------------
 // ----------------------------------------

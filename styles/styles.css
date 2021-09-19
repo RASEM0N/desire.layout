@@ -1,16 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap");
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, a,
+ol, ul, li, form,
+article, aside, footer, header, menu, nav, section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -68,7 +60,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-  line-height: 18px;
+  line-height: 27px;
   position: relative;
 }
 
@@ -120,6 +112,28 @@ p {
   color: #5a5a5a;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: inherit;
+  transition: transform 0.6s ease;
+}
+button:hover {
+  transform: scale(1.07);
+}
+
 /**======== Common colors =======**/
 /**======= Special colors =======**/
 /**======= Font families ======**/
@@ -127,5 +141,197 @@ p {
 /**======= Font weights =======**/
 /**==== Heading font sizes ====**/
 /**======= Breakpoints =======**/
+/**======== Common colors =======**/
+/**======= Special colors =======**/
+/**======= Font families ======**/
+/**======== Font sizes ========**/
+/**======= Font weights =======**/
+/**==== Heading font sizes ====**/
+/**======= Breakpoints =======**/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100% - 121px);
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__list-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(54, 56, 56, 0.9033);
+}
+.menu__list-item + .menu__list-item {
+  margin-left: 80px;
+}
+.form {
+  display: flex;
+}
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 6px 18px;
+  border-radius: 20px;
+  background-color: inherit;
+  border: 1px solid #363838;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #5a5a5a;
+  color: #a1a1a1;
+}
+.form__input::placeholder {
+  color: inherit;
+}
+.form__btn {
+  min-width: 160px;
+  background: #363838;
+  border: 1px solid #363838;
+  padding: 6px 0;
+  border-radius: 21px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #5a5a5a;
+  color: #fffff0;
+}
+
+.header {
+  padding: 45px 0;
+}
+.header__inner {
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  padding-left: 100px;
+  margin: 0 auto;
+}
+.header__btn {
+  margin-left: 60px;
+}
+.slider__inner {
+  display: flex;
+  flex-direction: column;
+}
+.slider__list {
+  background-image: url("images/main__slider-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 174px 36px 146px;
+  margin-bottom: 85px;
+}
+.slider__list-item {
+  display: flex;
+  justify-content: flex-end;
+}
+.slider__info {
+  margin-left: auto;
+  width: 54%;
+}
+.slider__info-title {
+  margin-bottom: 26px;
+}
+.slider__info-line {
+  width: 40%;
+  background: #979797;
+  height: 3px;
+}
+.slider__info-text {
+  margin-top: 26px;
+}
+.slider__group {
+  align-self: center;
+}
+.slider__group-btn {
+  width: 10px;
+  height: 10px;
+  background: #363838;
+  border-radius: 50%;
+}
+.slider__group-btn + .slider__group-btn {
+  margin-left: 30px;
+}
+.slider__group-btn_active {
+  background-color: #ffef35;
+}
+
+.footer__content {
+  padding: 61px 0 80px;
+  background-color: #dfdfdf;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info {
+  max-width: 50%;
+  margin-right: 28px;
+}
+.footer__info-title {
+  margin-bottom: 14px;
+}
+.footer__info-text {
+  margin-bottom: 16px;
+}
+.footer__info-email {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #363838;
+}
+.footer__info-email::before {
+  content: url("images/icon-email.svg");
+  margin-right: 14px;
+}
+.footer__form-btn {
+  margin-left: 10px;
+}
+.footer__menu-item {
+  position: relative;
+}
+.footer__menu-item + .footer__menu-item {
+  margin-top: 15px;
+}
+.footer__menu-img {
+  position: absolute;
+  top: 7px;
+  left: -28px;
+}
+.footer__menu-link {
+  font-weight: 700;
+  font-size: 14px;
+  color: #707070;
+}
+.footer__copyright {
+  padding: 42px 0;
+  background-color: #363838;
+  color: #a1a1a1;
+  text-align: center;
+}
 
 /*# sourceMappingURL=styles.css.map */
