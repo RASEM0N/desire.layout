@@ -34,6 +34,7 @@
     &__inner {
         display: flex;
         flex-direction: column;
+        padding-bottom: 85px;
     }
 
     &__list {
@@ -63,7 +64,7 @@
     &__info-line {
         width: 40%;
         background: #979797;
-        height: 3px;
+        height: 2px;
     }
 
     &__info-text {
@@ -87,6 +88,34 @@
 
     &__group-btn_active {
         background-color: $color-yellow;
+    }
+}
+
+.furniture {
+    margin-bottom: 105px;
+
+    &__inner {
+        padding: 50px 25px 0 25px;
+    }
+
+    &__info {
+        max-width: 730px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__info-title {
+        margin-bottom: 25px;
+    }
+
+    &__info-line {
+        display: inline-block;
+        width: 25%;
+        margin-bottom: 25px;
+    }
+
+    &__info-text {
+        margin-bottom: 50px;
     }
 }
 

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap");
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p, a,
-ol, ul, li, form,
+ol, ul, li, form, hr,
 article, aside, footer, header, menu, nav, section {
   margin: 0;
   padding: 0;
@@ -17,11 +17,9 @@ nav ul {
 }
 
 hr {
-  display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #cccccc;
-  margin: 1em 0;
   padding: 0;
 }
 
@@ -115,6 +113,10 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #363838;
 }
 
 ul,
@@ -216,6 +218,25 @@ button:hover {
   color: #fffff0;
 }
 
+.gallery-small__inner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 30px;
+}
+.gallery-small__picture {
+  position: relative;
+}
+.gallery-small__picture-img {
+  height: 100%;
+  width: 100%;
+}
+.gallery-small__picture-info {
+  display: none;
+  position: absolute;
+}
+.gallery-small__picture-line {
+  width: 25%;
+}
 .header {
   padding: 45px 0;
 }
@@ -235,6 +256,7 @@ button:hover {
 .slider__inner {
   display: flex;
   flex-direction: column;
+  padding-bottom: 85px;
 }
 .slider__list {
   background-image: url("images/main__slider-bg.jpg");
@@ -258,7 +280,7 @@ button:hover {
 .slider__info-line {
   width: 40%;
   background: #979797;
-  height: 3px;
+  height: 2px;
 }
 .slider__info-text {
   margin-top: 26px;
@@ -277,6 +299,29 @@ button:hover {
 }
 .slider__group-btn_active {
   background-color: #ffef35;
+}
+
+.furniture {
+  margin-bottom: 105px;
+}
+.furniture__inner {
+  padding: 50px 25px 0 25px;
+}
+.furniture__info {
+  max-width: 730px;
+  margin: 0 auto;
+  text-align: center;
+}
+.furniture__info-title {
+  margin-bottom: 25px;
+}
+.furniture__info-line {
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 25px;
+}
+.furniture__info-text {
+  margin-bottom: 50px;
 }
 
 .footer__content {

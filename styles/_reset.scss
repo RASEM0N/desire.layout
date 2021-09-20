@@ -1,6 +1,6 @@
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p, a,
-ol, ul, li, form,
+ol, ul, li, form, hr,
 article, aside, footer, header, menu, nav, section{
     margin: 0;
     padding: 0;
@@ -16,11 +16,9 @@ nav ul {
 }
 
 hr {
-    display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #cccccc;
-    margin: 1em 0;
     padding: 0;
 }
 

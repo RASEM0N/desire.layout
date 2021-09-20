@@ -1,7 +1,7 @@
 <html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Desire</title></head><style>@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap");
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p, a,
-ol, ul, li, form,
+ol, ul, li, form, hr,
 article, aside, footer, header, menu, nav, section {
   margin: 0;
   padding: 0;
@@ -17,11 +17,9 @@ nav ul {
 }
 
 hr {
-  display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #cccccc;
-  margin: 1em 0;
   padding: 0;
 }
 
@@ -115,6 +113,10 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #363838;
 }
 
 ul,
@@ -216,6 +218,25 @@ button:hover {
   color: #fffff0;
 }
 
+.gallery-small__inner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 30px;
+}
+.gallery-small__picture {
+  position: relative;
+}
+.gallery-small__picture-img {
+  height: 100%;
+  width: 100%;
+}
+.gallery-small__picture-info {
+  display: none;
+  position: absolute;
+}
+.gallery-small__picture-line {
+  width: 25%;
+}
 .header {
   padding: 45px 0;
 }
@@ -235,6 +256,7 @@ button:hover {
 .slider__inner {
   display: flex;
   flex-direction: column;
+  padding-bottom: 85px;
 }
 .slider__list {
   background-image: url("images/main__slider-bg.jpg");
@@ -258,7 +280,7 @@ button:hover {
 .slider__info-line {
   width: 40%;
   background: #979797;
-  height: 3px;
+  height: 2px;
 }
 .slider__info-text {
   margin-top: 26px;
@@ -277,6 +299,29 @@ button:hover {
 }
 .slider__group-btn_active {
   background-color: #ffef35;
+}
+
+.furniture {
+  margin-bottom: 105px;
+}
+.furniture__inner {
+  padding: 50px 25px 0 25px;
+}
+.furniture__info {
+  max-width: 730px;
+  margin: 0 auto;
+  text-align: center;
+}
+.furniture__info-title {
+  margin-bottom: 25px;
+}
+.furniture__info-line {
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 25px;
+}
+.furniture__info-text {
+  margin-bottom: 50px;
 }
 
 .footer__content {
@@ -335,4 +380,4 @@ button:hover {
 }
 
 /*# sourceMappingURL=styles.css.map */
-</style><body><!-- ------------------------------------------><!-- ------------------------------------------><!-- ------------------------------------------><header class="header"><div class="container"><div class="header__inner"><nav class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__list-link" href="#about">About</a></li><li class="menu__list-item"><a class="menu__list-link" href="#gallery">Gallery</a></li></ul></nav><a class="header__logo" href="#"><img class="header__logo-img" src="images/logo.png" alt="logo"/></a><nav class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__list-link" href="#blog">Blog</a></li><li class="menu__list-item"><a class="menu__list-link" href="#contact">Contact</a></li></ul></nav><button class="header__btn"><img class="header__btn-img" src="images/icon-menu.svg"/></button></div></div></header><div class="wrapper"><main class="main"><div class="slider"><div class="slider__inner"><div class="slider__list"><div class="container"><div class="slider__list-item"><div class="slider__info"><h1 class="slider__info-title">Furniture collection</h1><hr class="slider__info-line"/><p class="slider__info-text">Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint</p></div></div></div></div><div class="slider__group"><button class="slider__group-btn"></button><button class="slider__group-btn slider__group-btn_active"></button><button class="slider__group-btn"></button></div></div></div></main><footer class="footer"><div class="footer__content"><div class="container"><div class="footer__inner"><div class="footer__info"><h5 class="footer__info-title">Contact Us</h5><p class="footer__info-text">Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz you probably occupy</p><a class="footer__info-email" href="mailto:ouremailaddress@email.com">ouremailaddress@email.com</a><form class="form"><input class="form__input" placeholder="Subscribe by email"/><button class="form__btn footer__form-btn" type="button">Send</button></form></div><ul class="footer__menu"><li class="footer__menu-item"><img class="footer__menu-img" src="images/icon-facebook.svg"/><a class="footer__menu-link" href="#">Facebook</a></li><li class="footer__menu-item"><img class="footer__menu-img" src="images/icon-instagram.svg"/><a class="footer__menu-link" href="#">Instagram</a></li><li class="footer__menu-item"><img class="footer__menu-img" src="images/icon-pinterest.svg"/><a class="footer__menu-link" href="#">Pinterest</a></li><li class="footer__menu-item"><img class="footer__menu-img" src="images/icon-whatsapp.svg"/><a class="footer__menu-link" href="#">WhatsApp</a></li><li class="footer__menu-item"><img class="footer__menu-img" src="images/icon-youtube.svg"/><a class="footer__menu-link" href="#">Youtube</a></li></ul><nav class="footer__nav"><ul class="footer__menu"><li class="footer__menu-item"><a class="footer__menu-link">Delivery</a></li><li class="footer__menu-item"><a class="footer__menu-link">FAQ</a></li><li class="footer__menu-item"><a class="footer__menu-link">Help</a></li><li class="footer__menu-item"><a class="footer__menu-link">More About Us</a></li></ul></nav></div></div></div><div class="footer__copyright">674 Gonzales Drive.   Washington, PA 15301</div></footer></div><script src="scripts/main.js"></script></body></html>
+</style><body><!-- ------------------------------------------><!-- ------------------------------------------><!-- ------------------------------------------><header class="header"><div class="container"><div class="header__inner"><nav class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__list-link" href="#about">About</a></li><li class="menu__list-item"><a class="menu__list-link" href="#gallery">Gallery</a></li></ul></nav><a class="header__logo" href="#"><img class="header__logo-img" src="images/logo.png" alt="logo"/></a><nav class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__list-link" href="#blog">Blog</a></li><li class="menu__list-item"><a class="menu__list-link" href="#contact">Contact</a></li></ul></nav><button class="header__btn"><img class="header__btn-img" src="images/icon-menu.svg"/></button></div></div></header><div class="wrapper"><main class="main"><div class="slider"><div class="slider__inner"><div class="slider__list"><div class="container"><div class="slider__list-item"><div class="slider__info"><h1 class="slider__info-title">Furniture collection</h1><hr class="slider__info-line"/><p class="slider__info-text">Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint</p></div></div></div></div><div class="slider__group"><button class="slider__group-btn"></button><button class="slider__group-btn slider__group-btn_active"></button><button class="slider__group-btn"></button></div></div></div><div class="furniture"><div class="furniture__inner"><div class="furniture__info"><h3 class="furniture__info-title">Furniture new collection</h3><hr class="furniture__info-line"/><p class="furniture__info-text">Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint</p></div><div class="gallery-small footer__gallery-small"><div class="gallery-small__inner"><div class="gallery-small__picture"><img class="gallery-small__picture-img" src="images/furniture-1.jpg"/><div class="gallery-small__picture-info"><h6 class="gallery-small__picture-title">Truffaut literally trust</h6><hr class="gallery-small__picture-line"/><p class="gallery-small__picture-text">Living room furntiture | Chair</p></div></div><div class="gallery-small__picture gallery-small__picture_hover"><img class="gallery-small__picture-img" src="images/furniture-2.jpg"/><div class="gallery-small__picture-info"><h6 class="gallery-small__picture-title">Truffaut literally trust</h6><hr class="gallery-small__picture-line"/><p class="gallery-small__picture-text">Living room furntiture | Chair</p></div></div><div class="gallery-small__picture"><img class="gallery-small__picture-img" src="images/furniture-3.jpg"/><div class="gallery-small__picture-info"><h6 class="gallery-small__picture-title">Truffaut literally trust</h6><hr class="gallery-small__picture-line"/><p class="gallery-small__picture-text">Living room furntiture | Chair</p></div></div><div class="gallery-small__picture"><img class="gallery-small__picture-img" src="images/furniture-4.jpg"/><div class="gallery-small__picture-info"><h6 class="gallery-small__picture-title">Truffaut literally trust</h6><hr class="gallery-small__picture-line"/><p class="gallery-small__picture-text">Living room furntiture | Chair</p></div></div><div class="gallery-small__picture"><img class="gallery-small__picture-img" src="images/furniture-5.jpg"/><div class="gallery-small__picture-info"><h6 class="gallery-small__picture-title">Truffaut literally trust</h6><hr class="gallery-small__picture-line"/><p class="gallery-small__picture-text">Living room furntiture | Chair</p></div></div></div></div></div></div></main><footer class="footer"><div class="footer__content"><div class="container"><div class="footer__inner"><div class="footer__info"><h5 class="footer__info-title">Contact Us</h5><p class="footer__info-text">Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz you probably occupy</p><a class="footer__info-email" href="mailto:ouremailaddress@email.com">ouremailaddress@email.com</a><form class="form"><input class="form__input" placeholder="Subscribe by email"/><button class="form__btn footer__form-btn" type="button">Send</button></form></div><ul class="footer__menu"><li class="footer__menu-item"><img class="footer__menu-img" src="images/icon-facebook.svg"/><a class="footer__menu-link" href="#">Facebook</a></li><li class="footer__menu-item"><img class="footer__menu-img" src="images/icon-instagram.svg"/><a class="footer__menu-link" href="#">Instagram</a></li><li class="footer__menu-item"><img class="footer__menu-img" src="images/icon-pinterest.svg"/><a class="footer__menu-link" href="#">Pinterest</a></li><li class="footer__menu-item"><img class="footer__menu-img" src="images/icon-whatsapp.svg"/><a class="footer__menu-link" href="#">WhatsApp</a></li><li class="footer__menu-item"><img class="footer__menu-img" src="images/icon-youtube.svg"/><a class="footer__menu-link" href="#">Youtube</a></li></ul><nav class="footer__nav"><ul class="footer__menu"><li class="footer__menu-item"><a class="footer__menu-link" href="#">Delivery</a></li><li class="footer__menu-item"><a class="footer__menu-link" href="#">FAQ</a></li><li class="footer__menu-item"><a class="footer__menu-link" href="#">Help</a></li><li class="footer__menu-item"><a class="footer__menu-link" href="#">More About Us</a></li></ul></nav></div></div></div><div class="footer__copyright">674 Gonzales Drive.   Washington, PA 15301</div></footer></div><script src="scripts/main.js"></script></body></html>
